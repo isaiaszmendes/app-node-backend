@@ -25,7 +25,7 @@ routes.post('/boxes/:id/files',
       const valor = req.params.val
       const name = req.params.name
       const real = valor == 1 ? "real" : "reais"
-      return res.json(`Obrigado, ${name}, voce fez uma doacao de R$ ${valor} ${real}!`)
+      return res.json(`Obrigado, ${name}! Voce fez uma doacao de R$ ${valor} ${real}!`)
    })
 
 module.exports = routes
