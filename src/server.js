@@ -36,4 +36,4 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')))
 // add routes
 app.use(require('./routes'))
 
-server.listen(3300) 
+server.listen(3000)  
