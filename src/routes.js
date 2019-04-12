@@ -21,4 +21,9 @@ routes.post('/boxes/:id/files',
    FileController.store
 )
 
+routes.get('/bianca/:val', (req, res) => {
+   const valor = req.params.val
+   return res.json(`Obrigado, você fez uma doação de ${valor} reais!`)
+})
+
 module.exports = routes
